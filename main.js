@@ -1,4 +1,4 @@
-console.log("Pet Adoption");
+//console.log("Pet Adoption");
 const pets = [
     {
       id: 01,
@@ -241,17 +241,32 @@ const pets = [
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7gFTwWnpsh5Higt49cnrPzVV2XaealA-GVBZswahODo679UBc_AIi0qAfvSuKOBLCU0&usqp=CAU"
     }
   ];
+const btnFilter = () => {
+  let domString = `
+  <div class="buttons">
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-light">Light</button>
+</div>
+  `;
+  renderToDom("#btnContainer", domString);
+};
 
-const app = document.querySelector("#app");
+
+const app = document.querySelector("#cardContainer");
 let domString = "";
-
 
 for (const adoption of pets) {
   domString += `<div class="card" style="width: 18rem;">
     <img src="${adoption.imageUrl}" class="card-img-top" alt="...">
-      <div class="card-bodsy">
+      <div class="card-body">
         <p class="card-text">${adoption.name}</p>
+        <p class="card-text">${adoption.specialSkill}</p>
+        <p class="card-text">${adoption.color}</p>
+        <p class="card-text">${adoption.type}</p>
       </div>
   </div>`
 }
+
 app.innerHTML = domString;
