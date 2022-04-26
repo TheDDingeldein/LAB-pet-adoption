@@ -1,5 +1,13 @@
-.cardContainer {
+/* #modalContainer {
+  display: flex;
+} */
+
+/* #btnContainer {
+  display: flex;
+} */
+
+#cardContainer {
   display:  flex;
-  flex-wrap: wrap;
   flex-direction: row;
-}
+  flex-wrap: wrap;
+  }
