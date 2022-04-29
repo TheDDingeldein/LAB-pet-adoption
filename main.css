@@ -1,23 +1,20 @@
+*{display: flex;
+flex-flow: row wrap;
+};
+
 body {
   background-color: purple;
   };
 
-/* #modalContainer {
-  display: flex;
-} */
 
- #btnContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-#cardContainer {
-  display:  flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+#btnGroup {
+  flex-direction:;
   }
+
+/* .cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  } */

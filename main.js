@@ -256,7 +256,7 @@ const pets = [
 
 
 
-const app = document.querySelector("#cardContainer");
+const app = document.querySelector(".cardContainer");
 let domString = "";
 
 for (const adoption of pets) {
